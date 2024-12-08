@@ -29,7 +29,7 @@ jobs:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          targetPlatform: StandaloneWindows64
+          targetPlatform: Android
           buildMethod: UnityBuilderAction.BuildScript.Build
           buildName: CreateYourFrisk-win64
 
@@ -73,7 +73,7 @@ jobs:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          targetPlatform: StandaloneOSX
+          targetPlatform: iOS
           buildMethod: UnityBuilderAction.BuildScript.Build
           buildName: CreateYourFrisk-macos64
 
